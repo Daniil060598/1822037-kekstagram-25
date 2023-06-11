@@ -84,6 +84,7 @@ const effectLevelSliderElement = document.querySelector('.effect-level__slider')
 const effectLevelValueElement = document.querySelector('.effect-level__value');
 
 scaleControlBiggerElement.disabled = true;
+
 const onFullPictureImgResize = (evt) => {
   if (evt.target.closest('.scale__control--smaller')) {
     size = size - step;

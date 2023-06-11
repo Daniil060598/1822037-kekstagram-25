@@ -4,4 +4,3 @@
 ## Технологии
 - Чистый JS
 - Библиотеки: noUiSlider, pristine
-init

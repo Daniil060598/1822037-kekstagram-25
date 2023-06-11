@@ -16,6 +16,7 @@ const renderPictures = (pictures) => {
       openFullPictureWindow(photo);
     });
 
+    pictureListElement.innerHTML = '';
     pictureListFragment.appendChild(picture);
   });
 

@@ -4,7 +4,7 @@ const getData = (onSuccess) => {
   fetch('https://25.javascript.pages.academy/kekstagram/data')
     .then((response) => {
       if (response.ok) {
-        return (response);
+        return response;
       } else {
         showAlert('Не удалось загрузить фотографии');
       }
@@ -19,13 +19,10 @@ const getData = (onSuccess) => {
 };
 
 const sendData = (onSuccess, onFail, body) => {
-  fetch(
-    'https://25.javascript.pages.academy/kekstagram',
-    {
-      method: 'POST',
-      body,
-    },
-  )
+  fetch('https://25.javascript.pages.academy/kekstagram', {
+    method: 'POST',
+    body,
+  })
     .then((response) => {
       if (response.ok) {
         onSuccess();
